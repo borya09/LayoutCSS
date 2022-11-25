@@ -1,0 +1,11 @@
+.grid--two-columns\@tablet {
+  display: grid;
+  grid-gap: 1rem;  
+}
+
+@media only screen and (min-width: 900px) {
+  .grid--two-columns\@tablet {  
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    overflow: hidden;
+  }
+}
