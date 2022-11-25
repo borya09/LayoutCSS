@@ -1,15 +1,35 @@
 .box {
- 
+  --padding-horizontal: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  border-bottom: 3px solid var(--color-grey);
 }
 
 .box__header { 
-  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem var(--padding-horizontal);
+  border-bottom: 2px solid var(--color-grey);
 }
 
 .box__title {
-  
+  flex: 1;
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  font-weight: 500; 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .box__content {
-  
+  flex: 1;
+  padding: 1rem var(--padding-horizontal);
+  overflow-y: auto;
 }

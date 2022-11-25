@@ -1,19 +1,33 @@
 .layout {
-  
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 4rem 1fr 3rem;
+  grid-template-areas:
+    "header"
+    "view"
+    "menu";
+  height: 100vh;
+  overflow: hidden;
 }
 
 .layout__header {
- 
+  grid-area: header;
 }
 
 .layout__menu {
-
+  grid-area: menu;
 }
 
 .layout__view {
-
+  grid-area: view;
 }
 
 @media only screen and (min-width: 900px) {
-
+  .layout {
+    grid-template-columns: 3rem 1fr;
+    grid-template-rows: 4rem 1fr;
+    grid-template-areas:
+      "header header"
+      "menu view";
+  }
 }

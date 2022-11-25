@@ -1,15 +1,30 @@
 .menu {
-
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-top: 2px solid var(--color-grey);
 }
 
 .menu ul {
-
-}
-
-.menu li {
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 @media only screen and (min-width: 900px) {
-  
+  .menu {
+    border-top-width: 0;
+  }
+
+  .menu ul {
+    --separation: 1rem;
+    flex-direction: column;
+    align-items: center;
+    padding-top: var(--separation);
+    gap: var(--separation);
+  }
 }
