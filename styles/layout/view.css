@@ -1,18 +1,9 @@
 .view { 
-  padding: 2rem;
-  background: var(--background-color);
-  overflow: auto;
+}
+
+.view__content { 
 }
 
 @media only screen and (min-width: 900px) {
-  .view {
-    display: flex;
-    flex-direction: column;    
-    overflow: hidden;
-  }
 
-  .view__content {
-    display: grid;
-    overflow: hidden;
-  }
 }
